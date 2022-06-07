@@ -12,11 +12,11 @@ values do not exceed four million, find the sum of the even-valued terms.
 """
 
 
-def main():
-    x = 1
-    y = 2
+def main() -> int:
+    x: int = 1
+    y: int = 2
 
-    all_fibs = [x, y]
+    all_fibs: list = [x, y]
     while y <= 4000000:
         y_prime = y
         y = x + y
@@ -29,4 +29,3 @@ def main():
 if __name__ == "__main__":
     result = main()
     print(result)
-
