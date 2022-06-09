@@ -5,7 +5,7 @@ What is the 10 001st prime number?
 """
 
 
-def is_prime(x):
+def is_prime(x: int):
     if x % 2 == 0:
         return False
     for _ in range(2, x):
